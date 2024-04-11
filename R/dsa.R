@@ -496,7 +496,7 @@ if(!is.null(s.window1)){
 
    # Final information and object collection
 
-  info <- c(tranformation=ifelse(Log, "Log", "Level"), cval=cval, h=h)
+  info <- c(transformation=ifelse(Log, "Log", "Level"), cval=cval, h=h)
 
   finout <- list(output=output, fourier_terms=which.min(ic_value), reg=arima_reg365, info=info, stl=list(stl_1, stl_2, stl_3), outlier=ol, sa_result=sa_result, sa_result2=sa_result2, sfac_result=sfac_result)
   class(finout) <- "daily"
